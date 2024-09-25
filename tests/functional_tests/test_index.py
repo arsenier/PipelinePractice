@@ -10,7 +10,7 @@ chrome_driver = "C:/Users/IIoT_Lab/PycharmProjects/flaskProject/tests/functional
 
 class TestBackend:
 
-    def setup(self):
+    def setup_class(self):
         self.driver = webdriver.Chrome(chrome_driver)
 
     def test_add(self, url):
